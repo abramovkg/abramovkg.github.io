@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: white;
+      height: 100vh;
+      width: 100%;
+      position: fixed;      
+    }
+    #img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body onload="document.getElementById('img').src = window.location.search.replace('?','');">
+  <img id="img" src="" alt="Image not available"/>
+</body>
+</html>
